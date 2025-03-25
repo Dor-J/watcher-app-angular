@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+// Setup
+@import "./app/assets/styles/setup/variables";
+@import "./app/assets/styles/setup/functions";
+@import "./app/assets/styles/setup/mixins";
+@import "./app/assets/styles/setup/typography";
+
+// Basics
+@import "./app/assets/styles/basics/helpers";
+@import "./app/assets/styles/basics/layout";
+@import "./app/assets/styles/basics/base";
+@import "./app/assets/styles/basics/forms";
+
+// pages
+
+// Components
