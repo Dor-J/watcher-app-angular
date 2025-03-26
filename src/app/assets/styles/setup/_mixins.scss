@@ -97,7 +97,7 @@ $desktop-width: 954px;
 }
 
 @mixin btn(
-  $bg: $clr6,
+  $bg: $clr-primary-blue,
   $clr: $clr-neutral-white,
   $padding: em(20px) em(30px),
   $hover-bg: color.scale($bg, $lightness: -15%),
@@ -120,7 +120,7 @@ $desktop-width: 954px;
     scale 0.1s linear;
 
   background-color: $bg;
-  color: $clr8;
+  color: $clr;
 
   &:hover {
     scale: 1.04;
@@ -128,10 +128,7 @@ $desktop-width: 954px;
 
   &:active {
     scale: 0.95;
-  }
-
-  &.active {
-    background-color: $clr$bg;
+    background-color: $clr;
     color: $bg;
   }
 }
@@ -139,8 +136,8 @@ $desktop-width: 954px;
 @mixin search-bar(
   $padding: em(20px) em(30px),
   $border: none,
-  $background-color: $clr6,
-  $color: $clr8,
+  $background-color: white,
+  $color: black,
   $cursor: pointer
 ) {
   display: inline-flex;
@@ -149,8 +146,8 @@ $desktop-width: 954px;
   border: $border;
   border-radius: 4em;
   padding: $padding;
-  background-color: $clr6;
-  color: $clr8;
+  background-color: $background-color;
+  color: $color;
   cursor: pointer;
 }
 

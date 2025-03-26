@@ -4,12 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  user-select: none;
-}
-
-html,
-body {
-  background-color: black;
 }
 
 html {
@@ -43,25 +37,19 @@ img {
 a {
   text-decoration: none;
   color: inherit;
-}
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 ul,
 ol {
   list-style: none;
-  padding: 0;
 }
 
 input {
   max-width: 100%;
-}
-
-mark {
-  color: $clr1;
-  background-color: transparent;
 }
 
 .debug * {
@@ -100,8 +88,4 @@ mark {
 
 .btn-pill {
   border-radius: 100vh;
-}
-
-main {
-  background-color: $bgc;
 }
