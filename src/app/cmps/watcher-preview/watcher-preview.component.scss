@@ -1,0 +1,36 @@
+.watcher-preview {
+  max-width: 200px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.363);
+  .btns-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .btns-container button {
+    background: none;
+    border: none;
+    font-size: 1em;
+    transition: 0.2s;
+  }
+
+  .remove-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .remove-btn:hover {
+    background-color: rgb(255, 34, 0);
+    color: white;
+  }
+
+  .select-btn:hover {
+    text-decoration: underline;
+  }
+}

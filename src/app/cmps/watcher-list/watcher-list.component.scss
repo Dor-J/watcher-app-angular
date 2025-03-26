@@ -1,0 +1,11 @@
+.watcher-index .watcher-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+button.add-watcher {
+  width: fit-content;
+  margin-block: 20px;
+}
