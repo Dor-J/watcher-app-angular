@@ -1,3 +1,11 @@
 <article class="watcher-preview-article">
-  <p>watcher-preview works!</p>
+  <h2>{{ watcher.fullname }}</h2>
+  <img
+    [src]="'https://robohash.org/' + watcher.id + '?set=set3'"
+    alt="{{ watcher.fullname }}"
+  />
+  <section class="btns-container">
+    <button (click)="onSelect()" class="select-btn">Select</button>
+    <button (click)="onRemove()" class="remove-btn">X</button>
+  </section>
 </article>

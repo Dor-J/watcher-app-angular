@@ -1,3 +1,21 @@
 <section class="watcher-index-section">
-  <p>watcher-index works!</p>
+  <section className="watcher-index">
+    <h1>Watchers</h1>
+    <button (click)="onAddWatcher()">Add Watcher</button>
+
+    <div *ngIf="!watchers.length">Loading...</div>
+
+    <app-watcher-list
+      [watchers]="watchers"
+      (selectWatcher)="onSelectWatcher($event)"
+      (removeWatcher)="onRemoveWatcher($event)"
+    >
+    </app-watcher-list>
+
+    <app-watcher-details
+      *ngIf="selectedWatcher"
+      [watcher]="selectedWatcher"
+      (closeDetails)="onCloseDetails()"
+    ></app-watcher-details>
+  </section>
 </section>

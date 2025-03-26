@@ -1,1 +1,10 @@
-<p>watcher-details works!</p>
+<section (click)="onCloseDetails()" class="backdrop">
+  <section (click)="evStop($event)" class="watcher-details">
+    <h2>Details for: {{ watcher.fullname }}</h2>
+    <img
+      [src]="'https://robohash.org/' + watcher.id + '?set=set3'"
+      alt="{{ watcher.fullname }}"
+    />
+    <button (click)="onCloseDetails()">Close</button>
+  </section>
+</section>
