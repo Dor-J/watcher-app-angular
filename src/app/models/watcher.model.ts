@@ -1,5 +1,5 @@
 export interface Watcher {
-  id: string;
+  id?: string;
   fullname: string;
   movies: string[];
 }

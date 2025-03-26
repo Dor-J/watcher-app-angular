@@ -12,15 +12,15 @@ export const watcherService = {
 const WATCHER_DB = 'WATCHER_DB';
 _createWatchers();
 
-function query() {
+async function query(): Promise<Watcher[]> {
   return storageService.query(WATCHER_DB);
 }
 
-function remove(watcherId: string) {
+async function remove(watcherId: string) {
   return storageService.remove(WATCHER_DB, watcherId);
 }
 
-function save(watcher: Watcher) {
+async function save(watcher: Watcher) {
   return storageService.post(WATCHER_DB, watcher);
 }
 
