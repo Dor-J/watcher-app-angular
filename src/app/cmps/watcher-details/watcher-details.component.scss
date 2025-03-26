@@ -1,0 +1,30 @@
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.517);
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.watcher-details {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 50vw;
+  aspect-ratio: 1;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+
+  ul {
+    margin-block: 0 30px;
+  }
+
+  li {
+    font-size: 1.3em;
+  }
+}

@@ -9,6 +9,7 @@ import { WatcherIndexComponent } from './cmps/watcher-index/watcher-index.compon
 import { WatcherListComponent } from './cmps/watcher-list/watcher-list.component';
 import { WatcherPreviewComponent } from './cmps/watcher-preview/watcher-preview.component';
 import { WatcherEditComponent } from './cmps/watcher-edit/watcher-edit.component';
+import { WatcherDetailsComponent } from './cmps/watcher-details/watcher-details.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { WatcherEditComponent } from './cmps/watcher-edit/watcher-edit.component
     WatcherListComponent,
     WatcherPreviewComponent,
     WatcherEditComponent,
+    WatcherDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
