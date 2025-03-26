@@ -1,5 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .watcher-index {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  .btn-add-watcher {
+    padding: 1em 1.2em;
+  }
 }

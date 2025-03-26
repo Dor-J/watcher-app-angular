@@ -5,7 +5,7 @@ import { Watcher } from '../../models/watcher.model';
   selector: 'app-watcher-details',
   standalone: false,
   templateUrl: './watcher-details.component.html',
-  styleUrl: './watcher-details.component.scss',
+  styleUrls: ['./watcher-details.component.scss'],
 })
 export class WatcherDetailsComponent {
   @Input() watcher!: Watcher;

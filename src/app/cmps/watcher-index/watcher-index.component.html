@@ -1,21 +1,18 @@
-<section class="watcher-index-section">
-  <section className="watcher-index">
-    <h1>Watchers</h1>
-    <button (click)="onAddWatcher()">Add Watcher</button>
+<section class="watcher-index">
+  <button (click)="onAddWatcher()" class="btn-add-watcher">Add Watcher</button>
 
-    <div *ngIf="!watchers.length">Loading...</div>
+  <div *ngIf="!watchers.length">Loading...</div>
 
-    <app-watcher-list
-      [watchers]="watchers"
-      (selectWatcher)="onSelectWatcher($event)"
-      (removeWatcher)="onRemoveWatcher($event)"
-    >
-    </app-watcher-list>
+  <app-watcher-list
+    [watchers]="watchers"
+    (selectWatcher)="onSelectWatcher($event)"
+    (removeWatcher)="onRemoveWatcher($event)"
+  >
+  </app-watcher-list>
 
-    <app-watcher-details
-      *ngIf="selectedWatcher"
-      [watcher]="selectedWatcher"
-      (closeDetails)="onCloseDetails()"
-    ></app-watcher-details>
-  </section>
+  <app-watcher-details
+    *ngIf="selectedWatcher"
+    [watcher]="selectedWatcher"
+    (closeDetails)="onCloseDetails()"
+  ></app-watcher-details>
 </section>

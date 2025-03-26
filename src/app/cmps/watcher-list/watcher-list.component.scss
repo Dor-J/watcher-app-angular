@@ -1,11 +1,11 @@
-.watcher-index .watcher-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 0;
-}
+.watcher-list-section {
+  margin-block-start: 1em;
 
-button.add-watcher {
-  width: fit-content;
-  margin-block: 20px;
+  .watcher-list-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }

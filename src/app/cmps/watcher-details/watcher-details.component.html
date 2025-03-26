@@ -1,10 +1,16 @@
-<section (click)="onCloseDetails()" class="backdrop">
+<section *ngIf="watcher" (click)="onCloseDetails()" class="backdrop">
   <section (click)="evStop($event)" class="watcher-details">
     <h2>Details for: {{ watcher.fullname }}</h2>
     <img
       [src]="'https://robohash.org/' + watcher.id + '?set=set3'"
       alt="{{ watcher.fullname }}"
     />
+    <h3>Watcher movies:</h3>
+    <ul class="watcher-movie-list">
+      <li *ngFor="let movie of watcher.movies">
+        <span>{{ movie }}</span>
+      </li>
+    </ul>
     <button (click)="onCloseDetails()">Close</button>
   </section>
 </section>
